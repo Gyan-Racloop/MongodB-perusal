@@ -32,7 +32,7 @@ public class AccountingController {
         return accountingService.createAccountingDetails(accountingEntity);
     }
 
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public AccountingEntity updateLoanDetails(@PathVariable Number id, @Valid @RequestBody AccountingEntity accountingEntity) {
         return accountingService.updateAccount(id, accountingEntity);
     }

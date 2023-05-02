@@ -30,7 +30,7 @@ public class TransactionController  {
         return transactionService.createTransactionDetails(transactionEntity);
     }
 
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public TransactionEntity updateTransactionDetails(@PathVariable String id, @Valid @RequestBody TransactionEntity transactionEntity) {
         return transactionService.updateTransaction(id, transactionEntity);
     }

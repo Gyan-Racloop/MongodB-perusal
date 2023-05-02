@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.MongoId;
 import org.springframework.lang.Nullable;
 
 import javax.validation.constraints.NotNull;
@@ -17,8 +18,7 @@ import java.util.Date;
 
 public class RpsEntity {
 
-    @Id
-//    @NotNull
+    @MongoId
     private Number rps_id;
     @NotNull
     private String loan_account_no;

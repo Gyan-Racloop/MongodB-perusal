@@ -32,7 +32,7 @@ public class RpsController {
         return rpsService.createRpsDetails(rpsEntity);
     }
 
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public RpsEntity updateRpsDetails(@PathVariable Number id, @Valid @RequestBody RpsEntity rpsEntity) {
         return rpsService.updateRps(id, rpsEntity);
     }

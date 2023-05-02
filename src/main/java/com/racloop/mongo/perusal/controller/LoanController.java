@@ -31,7 +31,7 @@ public class LoanController {
         return loanService.createLoanDetails(loanEntity);
     }
 
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public LoanEntity updateLoanDetails(@PathVariable String id, @Valid @RequestBody LoanEntity loanEntity) {
         return loanService.updateEmployee(id, loanEntity);
     }
